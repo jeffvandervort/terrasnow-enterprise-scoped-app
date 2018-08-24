@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css>.carousel-row .col-md-12 {&#13;
+  padding-left: 0;&#13;
+  padding-right: 0;&#13;
+}&#13;
+&#13;
+.pull-in {&#13;
+  margin-left: 0;&#13;
+  margin-right: 0;&#13;
+}</css>
+        <draft>false</draft>
+        <id>sc_home_tf</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles>snc_external,snc_internal</roles>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-20 19:19:23</sys_created_on>
+        <sys_id>42d9f1edf5082300777f29d7ea0d47c8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>sc_home_tf</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sp_page_42d9f1edf5082300777f29d7ea0d47c8</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-20 19:19:56</sys_updated_on>
+        <title>Terraform Service Catalog </title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=42d9f1edf5082300777f29d7ea0d47c8"/>
+</record_update>

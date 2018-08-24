@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope, spUtil) {
+  /* widget controller */
+  var c = this;
+	if(!$scope.data.sc_cat_item.picture){
+		$scope.data.sc_cat_item.picture = "NO PICTURE PROVIDED";
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel {&#13;
+	height: 178px;&#13;
+}&#13;
+&#13;
+.catalog-item-image {&#13;
+   max-height: 150px;&#13;
+   min-height: 150px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>tf-cat-item-image</id>
+        <internal>false</internal>
+        <link/>
+        <name>Terraform Catalog Item Image</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */
+	data.sc_cat_item = $sp.getCatalogItem($sp.getParameter('sys_id'));
+
+})()]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-21 18:41:33</sys_created_on>
+        <sys_id>61caf275a9c02300777f096bb974b659</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Terraform Catalog Item Image</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sp_widget_61caf275a9c02300777f096bb974b659</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-21 18:55:23</sys_updated_on>
+        <template><![CDATA[<div ng-if="::data.sc_cat_item.picture" class="panel b wrapper-sm text-center">
+  <div>
+    <img class="img-responsive catalog-item-image" height="150px" width="150px" style="margin: 0 auto;" ng-src="{{data.sc_cat_.item.picture == 'NO PICTURE PROVIDED' && 'NONE' || ::data.sc_cat_item.picture}}"/> 
+  </div>
+   
+
+
+</div>]]></template>
+    </sp_widget>
+</record_update>

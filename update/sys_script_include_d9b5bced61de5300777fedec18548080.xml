@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_terraform_snow.AWSRoleQuery</api_name>
+        <client_callable>true</client_callable>
+        <description>return dictionary of roles and their asociated region/arns</description>
+        <name>AWSRoleQuery</name>
+        <script><![CDATA[var AWSRoleQuery = Class.create();
+
+AWSRoleQuery.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+     getRoles: function() {
+         var myResponse = {};
+         var RoleSysId = this.getParameter('RoleSysId');
+		 gs.info("x_terraform_snow - AWSRoleQuery provided the following sys_id: {0}", RoleSysId);
+         var gr = new GlideRecord("x_terraform_snow_cloud_account_details");
+         gr.addQuery("sys_id",RoleSysId);
+         gr.query();
+         while(gr.next())
+            {
+				myResponse['amis'] = gr.amis.getDisplayValue();
+				myResponse['key_pairs'] = gr.key_pairs.getDisplayValue();
+				myResponse['subnets'] = gr.subnets.getDisplayValue();
+				myResponse['security_groups'] = gr.security_groups.getDisplayValue();
+
+			}
+        return JSON.stringify(myResponse);
+     },
+
+
+
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-05-25 14:42:43</sys_created_on>
+        <sys_id>d9b5bced61de5300777fedec18548080</sys_id>
+        <sys_mod_count>65</sys_mod_count>
+        <sys_name>AWSRoleQuery</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sys_script_include_d9b5bced61de5300777fedec18548080</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-15 17:09:46</sys_updated_on>
+    </sys_script_include>
+</record_update>

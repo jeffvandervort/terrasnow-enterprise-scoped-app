@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="deployments" max_length="40" name="x_terraform_snow_deployments" type="collection">
+        <element attributes="=readonly_clickthrough=true " label="Associated request" max_length="40" name="associated_req" read_only="true" reference="sc_req_item" type="reference"/>
+        <element label="Aws account" max_length="40" name="aws_account" read_only="true" reference="x_terraform_snow_cloud_account_details" type="reference" use_dependent_field="true"/>
+        <element label="Link to AWS console" max_length="40" name="aws_console" read_only="true" type="string"/>
+        <element label="Current tfe status" max_length="120" name="current_tfe_status" read_only="true" type="string"/>
+        <element label="delete TFE workspace" max_length="40" name="delete_tfe_workspace" type="boolean"/>
+        <element label="Deployed by" max_length="40" name="deployed_by" read_only="true" reference="sys_user" type="reference"/>
+        <element label="deployment end time" max_length="40" name="dep_end_time" read_only="true" type="string"/>
+        <element label="deployment start time" max_length="40" name="dep_start_time" read_only="true" type="string"/>
+        <element display="true" label="Get current tfe status" max_length="40" name="get_current_tfe_status" type="boolean"/>
+        <element label="Source tf template" max_length="32" name="source_tf_template" read_only="true" reference="sc_cat_item" reference_qual="category=062ef22284741300777f3b0167a0480d^EQ" reference_qual_condition="category=062ef22284741300777f3b0167a0480d^EQ" type="reference"/>
+        <element label="Source TF template name" max_length="128" name="source_tf_template_name" read_only="true" type="string"/>
+        <element label="Source TF template repo" max_length="40" name="source_tf_template_url" read_only="true" type="url"/>
+        <element label="Source TF template  version" max_length="40" name="source_tf_template_ver" read_only="true" type="string"/>
+        <element label="Tfe workspace URL" max_length="40" name="tfe_workspace_url" type="translated_html"/>
+        <index name="index">
+            <element name="source_tf_template"/>
+        </index>
+    </element>
+</database>

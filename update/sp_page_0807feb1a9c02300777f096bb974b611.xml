@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css>section.page {&#13;
+&#13;
+  position: -ms-device-fixed !important;&#13;
+}&#13;
+&#13;
+_::-webkit-:not(:root:root), section.page { &#13;
+  &#13;
+  position: fixed !important;&#13;
+}</css>
+        <draft>false</draft>
+        <id>terraform_category</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles>x_terraform_snow.users</roles>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-21 18:25:04</sys_created_on>
+        <sys_id>0807feb1a9c02300777f096bb974b611</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>terraform_category</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sp_page_0807feb1a9c02300777f096bb974b611</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-21 18:25:32</sys_updated_on>
+        <title>Terraform Category - Scoped</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=0807feb1a9c02300777f096bb974b611"/>
+</record_update>

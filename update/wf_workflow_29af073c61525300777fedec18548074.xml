@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["dda9cd1b49b31300777f70c7a5af165e"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description>Creates a terraform enterprise workspace when a terraform backed catalog item is ordered.</description>
+        <expected_sequences>d1a9cd1b49b31300777f70c7a5af165d,d9a9cd1b49b31300777f70c7a5af1600,95a9cd1b49b31300777f70c7a5af1662,19a9cd1b49b31300777f70c7a5af165b,5da9cd1b49b31300777f70c7a5af1601,5da98d1b49b31300777f70c7a5af16ff,19a9cd1b49b31300777f70c7a5af1661,95a9cd1b49b31300777f70c7a5af165c,99a9cd1b49b31300777f70c7a5af165a,1da9cd1b49b31300777f70c7a5af165f,dda98d1b49b31300777f70c7a5af16fe,91a9cd1b49b31300777f70c7a5af165e,55a98d1b49b31300777f70c7a5af16fd,99a9cd1b49b31300777f70c7a5af1660,1da9cd1b49b31300777f70c7a5af1659,dda9cd1b49b31300777f70c7a5af165e</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>d1a9cd1b49b31300777f70c7a5af165d,d9a9cd1b49b31300777f70c7a5af1600,95a9cd1b49b31300777f70c7a5af1662,19a9cd1b49b31300777f70c7a5af165b,5da9cd1b49b31300777f70c7a5af1601,5da98d1b49b31300777f70c7a5af16ff,19a9cd1b49b31300777f70c7a5af1661,95a9cd1b49b31300777f70c7a5af165c,99a9cd1b49b31300777f70c7a5af165a,1da9cd1b49b31300777f70c7a5af165f,dda98d1b49b31300777f70c7a5af16fe,91a9cd1b49b31300777f70c7a5af165e,55a98d1b49b31300777f70c7a5af16fd,99a9cd1b49b31300777f70c7a5af1660,1da9cd1b49b31300777f70c7a5af1659,dda9cd1b49b31300777f70c7a5af165e</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>terrasnow-enterprise - scoped</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">d1a9cd1b49b31300777f70c7a5af165d</start>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>19a98d1b49b31300777f70c7a5af16fb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-14 16:16:31</sys_updated_on>
+        <table>global</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="terrasnow-enterprise - scoped">29af073c61525300777fedec18548074</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Creates a terraform enterprise workspace when a terraform backed catalog item is ordered.</description>
+        <name>terrasnow-enterprise - scoped</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-05-23 17:48:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>29af073c61525300777fedec18548074</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>terrasnow-enterprise - scoped</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>wf_workflow_29af073c61525300777fedec18548074</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-05-24 18:00:23</sys_updated_on>
+        <table>global</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>d1a9cd1b49b31300777f70c7a5af165d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d1a9cd1b49b31300777f70c7a5af165d"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">d1a9cd1b49b31300777f70c7a5af165d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>d9a9cd1b49b31300777f70c7a5af165d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Request Bodies</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>d9a9cd1b49b31300777f70c7a5af1600</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:04:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>124</x>
+        <y>18</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d9a9cd1b49b31300777f70c7a5af1600"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d9a9cd1b49b31300777f70c7a5af1600</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>dda9cd1b49b31300777f70c7a5af1600</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:04:01</sys_updated_on>
+        <value>workflow.scratchpad.sys_id = current.sys_id;&#13;
+&#13;
+workspaceBody = {};&#13;
+variablesBody = {};&#13;
+assumeRoleBody = {};&#13;
+tfeRunBody = {};&#13;
+&#13;
+var item = new GlideRecord("sc_req_item");&#13;
+   item.addQuery("request",current.request);&#13;
+   item.query();&#13;
+   workflow.scratchpad.opened_by =  current.request.requested_for;&#13;
+   if (item.next()) {&#13;
+// grab all variable sets from the parent request&#13;
+     var var_own = new GlideRecord('sc_item_option_mtom');&#13;
+     var_own.addQuery('request_item', item.sys_id);&#13;
+     //var_own.addQuery('sc_item_option.item_option_new.u_approval_display', 'global');&#13;
+     var_own.orderBy('sc_item_option.item_option_new.order');&#13;
+     var_own.query();&#13;
+     var catItemVars = {};&#13;
+     while (var_own.next()){&#13;
+       var columnName = var_own.sc_item_option.item_option_new.name;&#13;
+       var columnData = item.variable_pool[columnName].getDisplayValue();&#13;
+	   if(columnName.includes('tfv_')){&#13;
+		  catItemVars[columnName] = columnData;	&#13;
+	    }&#13;
+	   else if (columnName == 'gen_region'){&#13;
+		   workspaceBody["region"] = columnData;&#13;
+		   variablesBody["region"] = columnData;&#13;
+		   tfeRunBody["region"] = columnData;&#13;
+	   }&#13;
+	   else if (columnName == 'gen_org_name'){&#13;
+		   workspaceBody["org_name"] = columnData;&#13;
+		   variablesBody["org_name"] = columnData;&#13;
+	   }&#13;
+	   else if (columnName == 'gen_repo_namespace'){&#13;
+		   workspaceBody["repo_id"] = columnData;&#13;
+		   variablesBody["repo_id"] = columnData;&#13;
+		   tfeRunBody["project_name"] = columnData;&#13;
+	   }&#13;
+	   else if (columnName == 'gen_repo_url'){&#13;
+		   tfeRunBody["repo_url"] = columnData;&#13;
+	   }&#13;
+	   else if (columnName == 'gen_module_version'){&#13;
+		   workspaceBody["repo_version"] = columnData;&#13;
+		   variablesBody["repo_version"] = columnData;&#13;
+		   tfeRunBody["module_version"] = columnData;&#13;
+	   }&#13;
+	   else if (columnName == 'gen_aws_role'){&#13;
+		   variablesBody["role"] = columnData;&#13;
+	   }&#13;
+     }&#13;
+     }&#13;
+&#13;
+workspaceBody["workspace_name"] = String(item.sys_id);&#13;
+workspaceBody["action"] = "CREATE";&#13;
+var workspaceData = {};&#13;
+var workspaceDataList = [];&#13;
+workspaceDataList[0] = workspaceBody;&#13;
+workspaceData["data"] = workspaceDataList;&#13;
+&#13;
+&#13;
+//define the terraform variables - targets the tfe terraform variables &#13;
+variablesBody["workspace_id"] = "";&#13;
+variablesBody["cat_vars"] = [];&#13;
+variablesBody["cat_vars"][0] = catItemVars;&#13;
+var variablesData = {};&#13;
+var variablesDataList = [];&#13;
+variablesDataList[0] = variablesBody;&#13;
+variablesData["data"] = variablesDataList;&#13;
+&#13;
+&#13;
+tfeRunBody["workspace_id"] = "";&#13;
+var tfeRunData = {};&#13;
+var tfeRunDataList = [];&#13;
+tfeRunDataList[0] = tfeRunBody;&#13;
+tfeRunData["data"] = tfeRunDataList;&#13;
+&#13;
+//gs.info(JSON.stringify(variablesData));&#13;
+//gs.info(JSON.stringify(workspaceData));&#13;
+&#13;
+workflow.scratchpad.json_obj = JSON.stringify(catItemVars);&#13;
+workflow.scratchpad.variablesData = JSON.stringify(variablesData);&#13;
+workflow.scratchpad.workspaceData = JSON.stringify(workspaceData);&#13;
+workflow.scratchpad.tfeRunData = JSON.stringify(tfeRunData);&#13;
+//workflow.scratchpad.output_test = current.request;&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d9a9cd1b49b31300777f70c7a5af1600</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>dda9cd1b49b31300777f70c7a5af1600</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:04:01</sys_updated_on>
+        <value>workflow.scratchpad.sys_id = current.sys_id;&#13;
+&#13;
+workspaceBody = {};&#13;
+variablesBody = {};&#13;
+assumeRoleBody = {};&#13;
+tfeRunBody = {};&#13;
+&#13;
+var item = new GlideRecord("sc_req_item");&#13;
+   item.addQuery("request",current.request);&#13;
+   item.query();&#13;
+   workflow.scratchpad.opened_by =  current.request.requested_for;&#13;
+   if (item.next()) {&#13;
+// grab all variable sets from the parent request&#13;
+     var var_own = new GlideRecord('sc_item_option_mtom');&#13;
+     var_own.addQuery('request_item', item.sys_id);&#13;
+     //var_own.addQuery('sc_item_option.item_option_new.u_approval_display', 'global');&#13;
+     var_own.orderBy('sc_item_option.item_option_new.order');&#13;
+     var_own.query();&#13;
+     var catItemVars = {};&#13;
+     while (var_own.next()){&#13;
+       var columnName = var_own.sc_item_option.item_option_new.name;&#13;
+       var columnData = item.variable_pool[columnName].getDisplayValue();&#13;
+	   if(columnName.includes('tfv_')){&#13;
+		  catItemVars[columnName] = columnData;	&#13;
+	    }&#13;
+	   else if (columnName == 'gen_region'){&#13;
+		   workspaceBody["region"] = columnData;&#13;
+		   variablesBody["region"] = columnData;&#13;
+		   tfeRunBody["region"] = columnData;&#13;
+	   }&#13;
+	   else if (columnName == 'gen_org_name'){&#13;
+		   workspaceBody["org_name"] = columnData;&#13;
+		   variablesBody["org_name"] = columnData;&#13;
+	   }&#13;
+	   else if (columnName == 'gen_repo_namespace'){&#13;
+		   workspaceBody["repo_id"] = columnData;&#13;
+		   variablesBody["repo_id"] = columnData;&#13;
+		   tfeRunBody["project_name"] = columnData;&#13;
+	   }&#13;
+	   else if (columnName == 'gen_repo_url'){&#13;
+		   tfeRunBody["repo_url"] = columnData;&#13;
+	   }&#13;
+	   else if (columnName == 'gen_module_version'){&#13;
+		   workspaceBody["repo_version"] = columnData;&#13;
+		   variablesBody["repo_version"] = columnData;&#13;
+		   tfeRunBody["module_version"] = columnData;&#13;
+	   }&#13;
+	   else if (columnName == 'gen_aws_role'){&#13;
+		   variablesBody["role"] = columnData;&#13;
+	   }&#13;
+     }&#13;
+     }&#13;
+&#13;
+workspaceBody["workspace_name"] = String(item.sys_id);&#13;
+workspaceBody["action"] = "CREATE";&#13;
+var workspaceData = {};&#13;
+var workspaceDataList = [];&#13;
+workspaceDataList[0] = workspaceBody;&#13;
+workspaceData["data"] = workspaceDataList;&#13;
+&#13;
+&#13;
+//define the terraform variables - targets the tfe terraform variables &#13;
+variablesBody["workspace_id"] = "";&#13;
+variablesBody["cat_vars"] = [];&#13;
+variablesBody["cat_vars"][0] = catItemVars;&#13;
+var variablesData = {};&#13;
+var variablesDataList = [];&#13;
+variablesDataList[0] = variablesBody;&#13;
+variablesData["data"] = variablesDataList;&#13;
+&#13;
+&#13;
+tfeRunBody["workspace_id"] = "";&#13;
+var tfeRunData = {};&#13;
+var tfeRunDataList = [];&#13;
+tfeRunDataList[0] = tfeRunBody;&#13;
+tfeRunData["data"] = tfeRunDataList;&#13;
+&#13;
+//gs.info(JSON.stringify(variablesData));&#13;
+//gs.info(JSON.stringify(workspaceData));&#13;
+&#13;
+workflow.scratchpad.json_obj = JSON.stringify(catItemVars);&#13;
+workflow.scratchpad.variablesData = JSON.stringify(variablesData);&#13;
+workflow.scratchpad.workspaceData = JSON.stringify(workspaceData);&#13;
+workflow.scratchpad.tfeRunData = JSON.stringify(tfeRunData);&#13;
+//workflow.scratchpad.output_test = current.request;&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Request Bodies">d9a9cd1b49b31300777f70c7a5af1600</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>95a9cd1b49b31300777f70c7a5af1601</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>dda9cd1b49b31300777f70c7a5af165e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>1178</x>
+        <y>19</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=dda9cd1b49b31300777f70c7a5af165e"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log catalog item vars</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>19a9cd1b49b31300777f70c7a5af165b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>98</x>
+        <y>268</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=19a9cd1b49b31300777f70c7a5af165b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19a9cd1b49b31300777f70c7a5af165b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>99a9cd1b49b31300777f70c7a5af165b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>Catalog item variables: ${workflow.scratchpad.json_obj} </value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19a9cd1b49b31300777f70c7a5af165b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>99a9cd1b49b31300777f70c7a5af165b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>Catalog item variables: ${workflow.scratchpad.json_obj} </value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log catalog item vars">19a9cd1b49b31300777f70c7a5af165b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>dda9cd1b49b31300777f70c7a5af165b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>15</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>log tfe run data</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>dda98d1b49b31300777f70c7a5af16fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>428</x>
+        <y>443</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=dda98d1b49b31300777f70c7a5af16fe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>dda98d1b49b31300777f70c7a5af16fe</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>51a98d1b49b31300777f70c7a5af16ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>TFE run data: ${workflow.scratchpad.tfeRunData }</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>dda98d1b49b31300777f70c7a5af16fe</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>51a98d1b49b31300777f70c7a5af16ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>TFE run data: ${workflow.scratchpad.tfeRunData }</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="log tfe run data">dda98d1b49b31300777f70c7a5af16fe</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>95a98d1b49b31300777f70c7a5af16ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>12</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>log TFE variable request reponse</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>55a98d1b49b31300777f70c7a5af16fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>697</x>
+        <y>110</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=55a98d1b49b31300777f70c7a5af16fd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55a98d1b49b31300777f70c7a5af16fd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>d9a98d1b49b31300777f70c7a5af16fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>TFE variable creation response - ${workflow.scratchpad.variablesResponseStatus}    --- ${workflow.scratchpad.variablesResponseBody}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55a98d1b49b31300777f70c7a5af16fd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>d9a98d1b49b31300777f70c7a5af16fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>TFE variable creation response - ${workflow.scratchpad.variablesResponseStatus}    --- ${workflow.scratchpad.variablesResponseBody}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="log TFE variable request reponse">55a98d1b49b31300777f70c7a5af16fd</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>95a98d1b49b31300777f70c7a5af16fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>log TFE workspace request reponse</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>1da9cd1b49b31300777f70c7a5af165f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>418</x>
+        <y>350</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1da9cd1b49b31300777f70c7a5af165f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1da9cd1b49b31300777f70c7a5af165f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>9da9cd1b49b31300777f70c7a5af165f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>TFE workspace request response: ${workflow.scratchpad.workspaceResponseStatus}    --- ${workflow.scratchpad.workspaceResponseBody}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1da9cd1b49b31300777f70c7a5af165f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>9da9cd1b49b31300777f70c7a5af165f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>TFE workspace request response: ${workflow.scratchpad.workspaceResponseStatus}    --- ${workflow.scratchpad.workspaceResponseBody}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="log TFE workspace request reponse">1da9cd1b49b31300777f70c7a5af165f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>d1a9cd1b49b31300777f70c7a5af1660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>17</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>log the workflow id</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>95a9cd1b49b31300777f70c7a5af165c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>405</x>
+        <y>140</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=95a9cd1b49b31300777f70c7a5af165c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>95a9cd1b49b31300777f70c7a5af165c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>19a9cd1b49b31300777f70c7a5af165c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>workflow id: ${workflow.scratchpad.test_variable}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>95a9cd1b49b31300777f70c7a5af165c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>19a9cd1b49b31300777f70c7a5af165c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>workflow id: ${workflow.scratchpad.test_variable}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="log the workflow id">95a9cd1b49b31300777f70c7a5af165c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>5da9cd1b49b31300777f70c7a5af165c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>14</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>log upload configuration resonse</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>1da9cd1b49b31300777f70c7a5af1659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>960</x>
+        <y>117</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1da9cd1b49b31300777f70c7a5af1659"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1da9cd1b49b31300777f70c7a5af1659</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>9da9cd1b49b31300777f70c7a5af1659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>${workflow.scratchpad.tfeRunResponseStatus}    --- ${workflow.scratchpad.tfeRunResponseBody}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1da9cd1b49b31300777f70c7a5af1659</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>9da9cd1b49b31300777f70c7a5af1659</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>${workflow.scratchpad.tfeRunResponseStatus}    --- ${workflow.scratchpad.tfeRunResponseBody}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="log upload configuration resonse">1da9cd1b49b31300777f70c7a5af1659</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>d1a9cd1b49b31300777f70c7a5af165a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>log variables request body</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>5da98d1b49b31300777f70c7a5af16ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>115</x>
+        <y>418</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5da98d1b49b31300777f70c7a5af16ff"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5da98d1b49b31300777f70c7a5af16ff</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>dda98d1b49b31300777f70c7a5af16ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value> variables request body: ${workflow.scratchpad.variablesData}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5da98d1b49b31300777f70c7a5af16ff</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>dda98d1b49b31300777f70c7a5af16ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value> variables request body: ${workflow.scratchpad.variablesData}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="log variables request body">5da98d1b49b31300777f70c7a5af16ff</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>15a9cd1b49b31300777f70c7a5af1600</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>16</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>log workflow creation reponse</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>99a9cd1b49b31300777f70c7a5af165a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>416</x>
+        <y>262</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=99a9cd1b49b31300777f70c7a5af165a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99a9cd1b49b31300777f70c7a5af165a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>1da9cd1b49b31300777f70c7a5af165a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>workflow creation response: ${workflow.scratchpad.workflow_req_response}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99a9cd1b49b31300777f70c7a5af165a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>1da9cd1b49b31300777f70c7a5af165a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>workflow creation response: ${workflow.scratchpad.workflow_req_response}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="log workflow creation reponse">99a9cd1b49b31300777f70c7a5af165a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>51a9cd1b49b31300777f70c7a5af165b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>log workspace request body</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>5da9cd1b49b31300777f70c7a5af1601</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>99</x>
+        <y>343</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5da9cd1b49b31300777f70c7a5af1601"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5da9cd1b49b31300777f70c7a5af1601</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>dda9cd1b49b31300777f70c7a5af1601</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>workspace request body: ${workflow.scratchpad.workspaceData}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5da9cd1b49b31300777f70c7a5af1601</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>dda9cd1b49b31300777f70c7a5af1601</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>workspace request body: ${workflow.scratchpad.workspaceData}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="log workspace request body">5da9cd1b49b31300777f70c7a5af1601</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>15a9cd1b49b31300777f70c7a5af1602</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Log Message">396807940a0a0b5c00afd9f67d9fd7a2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>18</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>ordered by output</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>95a9cd1b49b31300777f70c7a5af1662</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>134</x>
+        <y>95</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=95a9cd1b49b31300777f70c7a5af1662"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>95a9cd1b49b31300777f70c7a5af1662</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>19a9cd1b49b31300777f70c7a5af1662</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <value>ordered by:  ${workflow.scratchpad.opened_by}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>95a9cd1b49b31300777f70c7a5af1662</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>19a9cd1b49b31300777f70c7a5af1662</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <value>ordered by:  ${workflow.scratchpad.opened_by}</value>
+        <variable display_value="">c35dbd1a0a0a0ba96248a7092864142d</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="ordered by output">95a9cd1b49b31300777f70c7a5af1662</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>5da9cd1b49b31300777f70c7a5af1662</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>send create TFE variables request</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>91a9cd1b49b31300777f70c7a5af165e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>679</x>
+        <y>15</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=91a9cd1b49b31300777f70c7a5af165e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>91a9cd1b49b31300777f70c7a5af165e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>15a9cd1b49b31300777f70c7a5af165e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>var request  = new sn_ws.RESTMessageV2();        &#13;
+    request.setHttpMethod('post');&#13;
+&#13;
+    //endpoint - ServiceNow REST Attachment API        &#13;
+    request.setEndpoint('https://tfsh.snow-pilot.dicelab.net/variables-webhook');&#13;
+    request.setMIDServer('EC2AMAZ-B09ERRQ.snow-pilot.dicelab.net');   &#13;
+    request.setRequestBody(workflow.scratchpad.variablesData); &#13;
+&#13;
+    response = request.execute();        &#13;
+    workflow.scratchpad.variablesResponseStatus = response.getStatusCode();&#13;
+    workflow.scratchpad.variablesResponseBody = response.getBody();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>91a9cd1b49b31300777f70c7a5af165e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>15a9cd1b49b31300777f70c7a5af165e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>var request  = new sn_ws.RESTMessageV2();        &#13;
+    request.setHttpMethod('post');&#13;
+&#13;
+    //endpoint - ServiceNow REST Attachment API        &#13;
+    request.setEndpoint('https://tfsh.snow-pilot.dicelab.net/variables-webhook');&#13;
+    request.setMIDServer('EC2AMAZ-B09ERRQ.snow-pilot.dicelab.net');   &#13;
+    request.setRequestBody(workflow.scratchpad.variablesData); &#13;
+&#13;
+    response = request.execute();        &#13;
+    workflow.scratchpad.variablesResponseStatus = response.getStatusCode();&#13;
+    workflow.scratchpad.variablesResponseBody = response.getBody();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="send create TFE variables request">91a9cd1b49b31300777f70c7a5af165e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>59a9cd1b49b31300777f70c7a5af165e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>send create TFE workspace request</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>19a9cd1b49b31300777f70c7a5af1661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>408</x>
+        <y>18</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=19a9cd1b49b31300777f70c7a5af1661"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19a9cd1b49b31300777f70c7a5af1661</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>99a9cd1b49b31300777f70c7a5af1661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>var request  = new sn_ws.RESTMessageV2();        &#13;
+    request.setHttpMethod('post');&#13;
+&#13;
+    //endpoint - ServiceNow REST Attachment API        &#13;
+    request.setEndpoint('https://tfsh.snow-pilot.dicelab.net/workflow-webhook');&#13;
+    request.setMIDServer('EC2AMAZ-B09ERRQ.snow-pilot.dicelab.net');   &#13;
+    request.setRequestBody(workflow.scratchpad.workspaceData); &#13;
+&#13;
+    response = request.execute();        &#13;
+    workflow.scratchpad.workspaceResponseStatus = response.getStatusCode();&#13;
+    workflow.scratchpad.workspacesponseBody = response.getBody();&#13;
+&#13;
+//get workspace id&#13;
+var json_obj = JSON.parse(response.getBody());&#13;
+workflow.scratchpad.workflow_req_response = JSON.stringify(json_obj);&#13;
+var workflow_id = "";&#13;
+workflow_id = json_obj['data']['id'];&#13;
+workflow.scratchpad.test_variable = workflow_id;&#13;
+&#13;
+var variables_json = JSON.parse(workflow.scratchpad.variablesData);&#13;
+variables_json['data'][0]["workspace_id"] = workflow_id;&#13;
+workflow.scratchpad.variablesData = JSON.stringify(variables_json);&#13;
+&#13;
+var tfeRunData_json = JSON.parse(workflow.scratchpad.tfeRunData);&#13;
+tfeRunData_json['data'][0]["workspace_id"] = workflow_id;&#13;
+workflow.scratchpad.tfeRunData = JSON.stringify(tfeRunData_json);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>19a9cd1b49b31300777f70c7a5af1661</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>99a9cd1b49b31300777f70c7a5af1661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>var request  = new sn_ws.RESTMessageV2();        &#13;
+    request.setHttpMethod('post');&#13;
+&#13;
+    //endpoint - ServiceNow REST Attachment API        &#13;
+    request.setEndpoint('https://tfsh.snow-pilot.dicelab.net/workflow-webhook');&#13;
+    request.setMIDServer('EC2AMAZ-B09ERRQ.snow-pilot.dicelab.net');   &#13;
+    request.setRequestBody(workflow.scratchpad.workspaceData); &#13;
+&#13;
+    response = request.execute();        &#13;
+    workflow.scratchpad.workspaceResponseStatus = response.getStatusCode();&#13;
+    workflow.scratchpad.workspacesponseBody = response.getBody();&#13;
+&#13;
+//get workspace id&#13;
+var json_obj = JSON.parse(response.getBody());&#13;
+workflow.scratchpad.workflow_req_response = JSON.stringify(json_obj);&#13;
+var workflow_id = "";&#13;
+workflow_id = json_obj['data']['id'];&#13;
+workflow.scratchpad.test_variable = workflow_id;&#13;
+&#13;
+var variables_json = JSON.parse(workflow.scratchpad.variablesData);&#13;
+variables_json['data'][0]["workspace_id"] = workflow_id;&#13;
+workflow.scratchpad.variablesData = JSON.stringify(variables_json);&#13;
+&#13;
+var tfeRunData_json = JSON.parse(workflow.scratchpad.tfeRunData);&#13;
+tfeRunData_json['data'][0]["workspace_id"] = workflow_id;&#13;
+workflow.scratchpad.tfeRunData = JSON.stringify(tfeRunData_json);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="send create TFE workspace request">19a9cd1b49b31300777f70c7a5af1661</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>dda9cd1b49b31300777f70c7a5af1661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>13</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>send upload configuration request</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>99a9cd1b49b31300777f70c7a5af1660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+        <x>938</x>
+        <y>18</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=99a9cd1b49b31300777f70c7a5af1660"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99a9cd1b49b31300777f70c7a5af1660</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>1da9cd1b49b31300777f70c7a5af1660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>var request  = new sn_ws.RESTMessageV2();        &#13;
+    request.setHttpMethod('post');&#13;
+&#13;
+    //endpoint - ServiceNow REST Attachment API        &#13;
+    request.setEndpoint('https://tfsh.snow-pilot.dicelab.net/tfe-run-webhook');&#13;
+    request.setMIDServer('EC2AMAZ-B09ERRQ.snow-pilot.dicelab.net');   &#13;
+    request.setRequestBody(workflow.scratchpad.tfeRunData); &#13;
+&#13;
+    response = request.execute();        &#13;
+    workflow.scratchpad.tfeRunResponseStatus = response.getStatusCode();&#13;
+    workflow.scratchpad.tfeRunResponseBody = response.getBody();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99a9cd1b49b31300777f70c7a5af1660</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>1da9cd1b49b31300777f70c7a5af1660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <value>var request  = new sn_ws.RESTMessageV2();        &#13;
+    request.setHttpMethod('post');&#13;
+&#13;
+    //endpoint - ServiceNow REST Attachment API        &#13;
+    request.setEndpoint('https://tfsh.snow-pilot.dicelab.net/tfe-run-webhook');&#13;
+    request.setMIDServer('EC2AMAZ-B09ERRQ.snow-pilot.dicelab.net');   &#13;
+    request.setRequestBody(workflow.scratchpad.tfeRunData); &#13;
+&#13;
+    response = request.execute();        &#13;
+    workflow.scratchpad.tfeRunResponseStatus = response.getStatusCode();&#13;
+    workflow.scratchpad.tfeRunResponseBody = response.getBody();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="send upload configuration request">99a9cd1b49b31300777f70c7a5af1660</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>51a9cd1b49b31300777f70c7a5af1661</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">5da9cd1b49b31300777f70c7a5af1662</condition>
+        <from display_value="ordered by output">95a9cd1b49b31300777f70c7a5af1662</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>15a9cd1b49b31300777f70c7a5af1664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="Log catalog item vars">19a9cd1b49b31300777f70c7a5af165b</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">95a98d1b49b31300777f70c7a5af16fe</condition>
+        <from display_value="log TFE variable request reponse">55a98d1b49b31300777f70c7a5af16fd</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>15a9cd1b49b31300777f70c7a5af1665</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="send upload configuration request">99a9cd1b49b31300777f70c7a5af1660</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d1a9cd1b49b31300777f70c7a5af1660</condition>
+        <from display_value="log TFE workspace request reponse">1da9cd1b49b31300777f70c7a5af165f</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>19a9cd1b49b31300777f70c7a5af1664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="log tfe run data">dda98d1b49b31300777f70c7a5af16fe</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d9a9cd1b49b31300777f70c7a5af165d</condition>
+        <from display_value="Begin">d1a9cd1b49b31300777f70c7a5af165d</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>21a9cd1b49b31300777f70c7a5af1673</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="Create Request Bodies">d9a9cd1b49b31300777f70c7a5af1600</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">51a9cd1b49b31300777f70c7a5af1661</condition>
+        <from display_value="send upload configuration request">99a9cd1b49b31300777f70c7a5af1660</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>51a9cd1b49b31300777f70c7a5af1664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="log upload configuration resonse">1da9cd1b49b31300777f70c7a5af1659</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">5da9cd1b49b31300777f70c7a5af165c</condition>
+        <from display_value="log the workflow id">95a9cd1b49b31300777f70c7a5af165c</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>51a9cd1b49b31300777f70c7a5af1665</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="log workflow creation reponse">99a9cd1b49b31300777f70c7a5af165a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">dda9cd1b49b31300777f70c7a5af165b</condition>
+        <from display_value="Log catalog item vars">19a9cd1b49b31300777f70c7a5af165b</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>6da9cd1b49b31300777f70c7a5af1665</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="log workspace request body">5da9cd1b49b31300777f70c7a5af1601</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">95a98d1b49b31300777f70c7a5af16ff</condition>
+        <from display_value="log tfe run data">dda98d1b49b31300777f70c7a5af16fe</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>6da9cd1b49b31300777f70c7a5af1672</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="send create TFE variables request">91a9cd1b49b31300777f70c7a5af165e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">95a9cd1b49b31300777f70c7a5af1601</condition>
+        <from display_value="Create Request Bodies">d9a9cd1b49b31300777f70c7a5af1600</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>9da9cd1b49b31300777f70c7a5af1663</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="ordered by output">95a9cd1b49b31300777f70c7a5af1662</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">dda9cd1b49b31300777f70c7a5af1661</condition>
+        <from display_value="send create TFE workspace request">19a9cd1b49b31300777f70c7a5af1661</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>9da9cd1b49b31300777f70c7a5af1664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="log the workflow id">95a9cd1b49b31300777f70c7a5af165c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d1a9cd1b49b31300777f70c7a5af165a</condition>
+        <from display_value="log upload configuration resonse">1da9cd1b49b31300777f70c7a5af1659</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>a9a9cd1b49b31300777f70c7a5af1665</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="End">dda9cd1b49b31300777f70c7a5af165e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">15a9cd1b49b31300777f70c7a5af1602</condition>
+        <from display_value="log workspace request body">5da9cd1b49b31300777f70c7a5af1601</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>a9a9cd1b49b31300777f70c7a5af1672</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="log variables request body">5da98d1b49b31300777f70c7a5af16ff</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">15a9cd1b49b31300777f70c7a5af1600</condition>
+        <from display_value="log variables request body">5da98d1b49b31300777f70c7a5af16ff</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>d9a9cd1b49b31300777f70c7a5af1664</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="send create TFE workspace request">19a9cd1b49b31300777f70c7a5af1661</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">51a9cd1b49b31300777f70c7a5af165b</condition>
+        <from display_value="log workflow creation reponse">99a9cd1b49b31300777f70c7a5af165a</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>e5a9cd1b49b31300777f70c7a5af1665</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="log TFE workspace request reponse">1da9cd1b49b31300777f70c7a5af165f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">59a9cd1b49b31300777f70c7a5af165e</condition>
+        <from display_value="send create TFE variables request">91a9cd1b49b31300777f70c7a5af165e</from>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:29</sys_created_on>
+        <sys_id>e5a9cd1b49b31300777f70c7a5af1672</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:29</sys_updated_on>
+        <to display_value="log TFE variable request reponse">55a98d1b49b31300777f70c7a5af16fd</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-13 16:02:28</sys_created_on>
+        <sys_id>d9a98d1b49b31300777f70c7a5af16fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-13 16:02:28</sys_updated_on>
+        <workflow_version display_value="terrasnow-enterprise - scoped">19a98d1b49b31300777f70c7a5af16fb</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=29af073c61525300777fedec18548074^sys_id!=19a98d1b49b31300777f70c7a5af16fb">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

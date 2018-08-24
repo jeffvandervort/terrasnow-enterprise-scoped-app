@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>$sp-logo-margin-x: 		15px !default;&#13;
+$sp-tagline-color:		$text-color !default;&#13;
+$navbar-inverse-bg: 	#3a3f51 !default;&#13;
+$navbar-inverse-link-color: #bdc0c4 !default;&#13;
+$navbar-inverse-link-hover-color: #ffffff !default;&#13;
+$body-bg: 				#f0f3f4 !default;&#13;
+$dropdown-link-disabled-color: #ccc;&#13;
+</css_variables>
+        <footer/>
+        <footer_fixed>false</footer_fixed>
+        <header display_value="Terraform Header">3eda3121f5482300777f29d7ea0d479a</header>
+        <name>Terraform</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-20 19:22:47</sys_created_on>
+        <sys_id>f39afdedf5082300777f29d7ea0d47ac</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Terraform</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sp_theme_f39afdedf5082300777f29d7ea0d47ac</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-20 19:24:18</sys_updated_on>
+    </sp_theme>
+</record_update>

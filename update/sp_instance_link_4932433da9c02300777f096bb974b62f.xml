@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>cubes</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>0</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Manage Terraform Deployments</short_description>
+        <size>md</size>
+        <sp_column display_value="3">943c39e1f5482300777f29d7ea0d47d4</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Terraform Icon Link">cdb147f9a9c02300777f096bb974b6e4</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-21 19:14:00</sys_created_on>
+        <sys_id>4932433da9c02300777f096bb974b62f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Manage Deployments</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sp_instance_link_4932433da9c02300777f096bb974b62f</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-24 16:50:30</sys_updated_on>
+        <title>Manage Deployments</title>
+        <type>url</type>
+        <url>terraform_deployments_url_list?id=list&amp;table=x_terraform_snow_deployments</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=4932433da9c02300777f096bb974b62f"/>
+</record_update>
