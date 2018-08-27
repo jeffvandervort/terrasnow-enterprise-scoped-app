@@ -8,7 +8,7 @@
         <applies_sc_task>true</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="terraform-aws-lx-instance">7af832f3c9731300777fc591c0d0fa72</cat_item>
+        <cat_item/>
         <cat_variable>IO:7909f2f3c9731300777fc591c0d0fa91</cat_variable>
         <condition/>
         <description/>

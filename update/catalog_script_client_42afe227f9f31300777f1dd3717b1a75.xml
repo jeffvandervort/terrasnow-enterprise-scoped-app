@@ -8,7 +8,7 @@
         <applies_sc_task>true</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="test item">b1e10e2bf9731300777f1dd3717b1ae6</cat_item>
+        <cat_item/>
         <cat_variable>IO:df02426bf9731300777f1dd3717b1a38</cat_variable>
         <condition/>
         <description/>
