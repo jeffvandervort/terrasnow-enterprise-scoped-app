@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_terraform_snow.users" name="x_terraform_snow.users">e03e3d25f5482300777f29d7ea0d474c</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-20 19:39:01</sys_created_on>
+        <sys_id>b15ef925f5482300777f29d7ea0d4771</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e03e3d25f5482300777f29d7ea0d474c</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sys_embedded_help_role_b15ef925f5482300777f29d7ea0d4771</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-20 19:39:01</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

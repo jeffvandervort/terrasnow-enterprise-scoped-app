@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="aws_console" label="Link to AWS console" language="en" table="x_terraform_snow_deployments">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>aws_console</element>
+            <help/>
+            <hint/>
+            <label>Link to AWS console</label>
+            <language>en</language>
+            <name>x_terraform_snow_deployments</name>
+            <plural>Link to AWS consoles</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+            <sys_created_on>2018-07-11 13:12:35</sys_created_on>
+            <sys_id>cb46a220ed531300777fe2719a5c0506</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Link to AWS console</sys_name>
+            <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+            <sys_update_name>sys_documentation_x_terraform_snow_deployments_aws_console_en</sys_update_name>
+            <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+            <sys_updated_on>2018-07-11 13:12:35</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

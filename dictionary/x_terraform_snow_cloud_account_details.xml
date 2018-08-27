@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="cloud_accounts" max_length="40" name="x_terraform_snow_cloud_account_details" type="collection">
+        <element display="true" label="Ad group name" max_length="40" name="ad_group_name" type="string"/>
+        <element label="Amis" max_length="800" name="amis" read_only="true" type="script_plain"/>
+        <element label="aws account info last updated" max_length="128" name="aws_account_info_last_updated" read_only="true" type="string"/>
+        <element label="aws_region" max_length="40" name="aws_region" type="string"/>
+        <element label="aws_role" max_length="128" name="aws_role" type="string"/>
+        <element label="Key pairs" max_length="800" name="key_pairs" read_only="true" type="script_plain"/>
+        <element label="Security groups" max_length="800" name="security_groups" read_only="true" type="script_plain"/>
+        <element label="Subnets" max_length="800" name="subnets" read_only="true" type="script_plain"/>
+    </element>
+</database>

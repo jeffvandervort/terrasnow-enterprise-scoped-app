@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="terrasnow REST endpoints" max_length="40" name="x_terraform_snow_terrasnow_rest_endpoints" type="collection">
+        <element label="Description" max_length="256" name="description" type="string"/>
+        <element label="Endpoint" mandatory="true" max_length="40" name="endpoint" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;    var full_url = &quot;&quot;;&#13;&#10;&#9;full_url = current.host.url + current.endpoint;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return full_url;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="full URL" max_length="128" name="full_url" read_only="true" type="string" virtual="true"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Host" mandatory="true" max_length="128" name="host" reference="x_terraform_snow_terrasnow_server" reference_qual="urlISNOTEMPTY^EQ" reference_qual_condition="urlISNOTEMPTY^EQ" type="reference"/>
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+    </element>
+</database>

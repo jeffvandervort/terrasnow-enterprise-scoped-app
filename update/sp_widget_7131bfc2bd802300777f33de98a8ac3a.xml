@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope,$location,$rootScope,$timeout,spUtil) {
+	var c = this;
+
+	var blueprint = $location.search().blueprint;
+	var error = $location.search().error;
+	var table = $location.search().table;
+	
+	spUtil.recordWatch($scope, "sn_cmp_stack","",function(name,data){
+		c.server.update();		
+	});
+
+	$scope.goTo = function(url){
+		var info = {};
+		info.url = url;
+
+		$rootScope.$broadcast("cloudStacksEvent",info);
+	}
+
+	if(typeof blueprint == 'undefined' && typeof error == 'undefined' && typeof table == 'undefined'){
+		$scope.goTo("?id=terraform_deployments&category=terraform_deployments");
+	}
+
+	$scope.setPageNum = function(num) {
+		$scope.data.p = num;
+		getData(num);
+	};
+
+	function getData(p) {
+		var f = $scope.data;
+		setPermalink(p);
+	}
+	$scope.getNumber = function(num) {
+		return new Array(num);
+	};
+
+	$scope.mathMin = function(v1,v2) {
+		return Math.min(v1,v2);
+	};
+
+	function setPermalink(page){
+		var search = $location.search();
+		angular.extend(search, {
+			id: 'terraform_deployments',
+			category:'terraform_deployments',
+			table: 'sn_cmp_stack',
+			blueprint : $scope.data.first_list[page-1],
+			p: page
+		});
+		$location.search(search);
+	}
+
+	c.isActiveItem = function(item_blueprint){
+		var blueprint = $location.search().blueprint;
+		var error = $location.search().error;
+
+		if (blueprint == item_blueprint) {
+			return true;
+		}
+		else if(error && item_blueprint == 'Stacks with Issues'){
+			return true;
+		}
+		else if(blueprint == 'null' && item_blueprint == 'Discovered Stacks'){
+			return true;
+		}
+		else if(typeof blueprint == 'undefined' && typeof error == 'undefined' && item_blueprint == 'All Stacks'){
+			return true;
+		}
+		else
+			return false;
+	};
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel-heading {&#13;
+  height: 52px;&#13;
+  padding-top:18px;&#13;
+}&#13;
+&#13;
+.no_blueprints{&#13;
+visibility: hidden;&#13;
+}&#13;
+&#13;
+.orange{&#13;
+  color:#FFA500&#13;
+}&#13;
+&#13;
+&#13;
+.panel-body {&#13;
+  padding: 0px;&#13;
+  height: 430px;&#13;
+  overflow-y: auto;&#13;
+}&#13;
+&#13;
+.list-group-item:hover {&#13;
+  cursor: pointer;  &#13;
+}&#13;
+&#13;
+.list-group-item { &#13;
+  border: none;&#13;
+  border-radius: 0;&#13;
+}&#13;
+&#13;
+.active-item,&#13;
+.active-item:hover,&#13;
+.active-item:focus {&#13;
+  color : #428bca;&#13;
+  background-color: transparent;&#13;
+}&#13;
+&#13;
+.list-group &gt; .list-group-item &gt; span {&#13;
+	margin-top: 2.3px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>terraform-deployments-nav</id>
+        <internal>false</internal>
+        <link><![CDATA[function(scope,elem, attrs, ctrl) {
+	$(document).ready(function(){
+		resize_window();
+	});
+
+	$(window).resize(function(){
+		resize_window();
+	});
+
+	function resize_window(){
+		var panel_height = ($(document).height()- 280) + 'px';
+		$(elem).find('.panel-body').css('height',panel_height);
+	}
+	
+	
+	
+}]]></link>
+        <name>Terraform Deployments Nav - Scoped</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.myCIs = [];
+	options.maximum_entries = 15;
+	options.maximum_pages = 3;
+	data.first_record = "";
+	data.p = data.p || $sp.getParameter('p') || 1;
+	data.p = parseInt(data.p);
+	data.window_size = data.window_size || 15;
+	data.page_index = data.p - 1;
+	data.window_start = data.page_index * data.window_size;
+	data.window_end = (data.page_index + 1) * data.window_size;
+	data.window_start = parseInt(data.window_start);
+	data.window_end = parseInt(data.window_end);
+	data.first_list = ['All Stacks'];
+	if(data.p == 1)
+		data.blueprints = [{name: 'All Stacks', url :"?id=terraform_deployments&category=terraform_deployments&table=sn_cmp_stack"},{name: 'Stacks with Issues', url :"?id=terraform_deployments&category=terraform_deployments&table=sn_cmp_stack&error=true"}];
+	else
+		data.blueprints = [];
+	data.row_count = 2;
+	var count;
+	var rownumber = 0;
+	
+	data.gv = gs.getUser().getPreference('cloud_user_portal_view') || 'mine';
+
+	data.group_ids = [];
+		var grm_rec = new GlideRecord('sys_user_grmember');  
+		grm_rec.addQuery('user',gs.getUserID());  
+		grm_rec.query();  
+		while(grm_rec.next()){  
+			data.group_ids.push(grm_rec.group.sys_id);  
+		}  
+
+	var ga = new GlideAggregate('sn_cmp_stack');
+	if(data.gv == 'mine'){
+		ga.addEncodedQuery("assigned_to="+ gs.getUserID());
+	}
+	else if(data.gv == 'group'){
+		ga.addEncodedQuery("assigned_to="+ gs.getUserID()+"^ORowner_groupIN"+data.group_ids.join(','));
+	}
+	ga.groupBy('blueprint.name');
+	ga.chooseWindow(data.window_start, data.window_end);
+	ga.query();
+
+	var fGr = new GlideAggregate('sn_cmp_stack');
+	if(data.gv == 'mine'){
+		fGr.addEncodedQuery("assigned_to="+ gs.getUserID());
+	}
+	else if(data.gv == 'group'){
+		fGr.addEncodedQuery("assigned_to="+ gs.getUserID()+"^ORowner_groupIN"+data.group_ids.join(','));
+	}
+	fGr.groupBy('blueprint.name');
+	fGr.query();
+
+	while(fGr.next()){
+		if(rownumber % options.maximum_entries == 0)
+			data.first_list.push(fGr.getDisplayValue("blueprint.name"));
+		rownumber++;	
+	}
+
+	while(ga.next()){
+		var obj = {};	
+		obj.name = ga.getDisplayValue('blueprint.name');
+		var queryName = (gs.nil(obj.name) ? 'null' : obj.name);
+		obj.url = "?id=terraform_deployments&category=terraform_deployments&table=sn_cmp_stack&blueprint="+queryName;
+		if (gs.nil(obj.name))
+			obj.name = 'Discovered Stacks';
+		data.blueprints.push(obj);
+	}
+	
+	count = ga.getRowCount();
+	data.row_count = data.row_count + count;
+	data.num_pages = Math.ceil(data.row_count/ data.window_size);
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>adm.taylor.c.mulder</sys_created_by>
+        <sys_created_on>2018-08-22 17:17:53</sys_created_on>
+        <sys_id>7131bfc2bd802300777f33de98a8ac3a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Terraform Deployments Nav - Scoped</sys_name>
+        <sys_package display_value="terraform-snow" source="x_terraform_snow">e4a2adf774241300777ff5c38bfe8185</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="terraform-snow">e4a2adf774241300777ff5c38bfe8185</sys_scope>
+        <sys_update_name>sp_widget_7131bfc2bd802300777f33de98a8ac3a</sys_update_name>
+        <sys_updated_by>adm.taylor.c.mulder</sys_updated_by>
+        <sys_updated_on>2018-08-22 17:23:38</sys_updated_on>
+        <template><![CDATA[<div class="panel b" >
+  <div class="panel-heading">
+    <h4 class="panel-title">${Catalog Items}</h4>
+  </div>
+  <div class="panel-body">
+    <div class="list-group">
+      <a ng-click="goTo(item.url)" style="padding-top: 4px;" ng-class="{'active-item': c.isActiveItem('{{item.name}}'), 'orange': item.name == 'Discovered Stacks' }" class="list-group-item" ng-repeat="item in data.blueprints" ng-if="data.blueprints.length > 0">
+        {{item.name}}       
+      </a>
+    </div>
+  </div>
+  <div class="panel-footer" ng-hide="options.hide_footer">
+    <div ng-class="{'no_blueprints': data.blueprints.length == 2}" class="btn-toolbar m-r pull-left">
+      <div class="btn-group">
+        <a ng-disabled="data.p == 1" href="javascript:void(0)" ng-click="setPageNum(data.p - 1)" class="btn btn-default"><i class="fa fa-chevron-left"></i></a>
+      </div>
+      <div class="btn-group">
+        <a ng-disabled="data.p == data.num_pages" href="javascript:void(0)" ng-click="setPageNum(data.p + 1)" class="btn btn-default"><i class="fa fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div ng-class="{'no_blueprints': data.blueprints.length == 2}" class="m-t-xs panel-title">${{{data.window_start + 1}} - {{ mathMin(data.window_end,data.row_count) }} of {{data.row_count}}}</div>
+    <span class="clearfix"></span>
+  </div>
+</div>
+
+]]></template>
+    </sp_widget>
+</record_update>
